@@ -30,8 +30,8 @@ main{flex:1}
 
 body.aboutpage{--bg:#fff}
 .info{flex:1;display:flex;flex-direction:column;padding:80px 20px 24px}
-.info .intro{margin:0 0 40px;font-size:24px;line-height:28.5px}
-.info .contact{margin-top:auto;padding-top:40px;font-size:24px;line-height:28.5px}
+.info .intro{margin:0 0 40px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:26px;line-height:30px}
+.info .contact{margin-top:auto;padding-top:40px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:26px;line-height:30px}
 .info .contact a{display:block;width:max-content}
 .ab{padding:80px 20px 80px;display:grid;align-content:start;grid-template-columns:1fr;gap:21px}
 .ab p{margin:0 0 21px}
@@ -45,7 +45,7 @@ body.aboutpage{--bg:#fff}
 @media(min-aspect-ratio:3/2){.cs-hero.fit img{object-fit:cover}}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .nm{color:#702DFF}
-.cs-lead{padding:0 20px;margin-top:24px;font-size:24px;line-height:28.5px}
+.cs-lead{padding:0 20px;margin-top:24px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:26px;line-height:30px}
 .cs-lead p.clamp{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
 .more{display:inline-block;padding:0;margin:12px 0 0;background:none;border:0;font:inherit;color:inherit;text-decoration:underline;cursor:pointer}
 .more[hidden]{display:none}
@@ -64,8 +64,8 @@ body.aboutpage{--bg:#fff}
 
 @media(min-width:768px){
  .info{padding:104px 20px 24px}
- .info .intro{font-size:30px;line-height:35.5px;margin-bottom:38px}
- .info .contact{font-size:30px;line-height:35.5px}
+ .info .intro{font-size:40px;line-height:40.5px;letter-spacing:-.3px;margin-bottom:38px}
+ .info .contact{font-size:40px;line-height:40.5px}
  .blk.b3{aspect-ratio:1126/588}
  .singer .blk.b3{aspect-ratio:1400/930}
  .blk.b3 video{left:16%;width:68%;top:6.46%;transform:none}
@@ -77,9 +77,9 @@ body.aboutpage{--bg:#fff}
  .ab{grid-template-columns:50.893% 1fr;gap:0;padding:103px 20px 80px}
  .ab .col1{max-width:690px}
  .ab p{margin-bottom:23.5px}
- .cs-lead{margin-top:24px;font-size:30px;line-height:35.5px}
- .cs-meta{font-size:16px;line-height:21.45px;margin-top:25.7px}
- .cs-blocks{margin-top:170.5px}
+ .cs-lead{margin-top:16px;font-size:40px;line-height:45.5px}
+ .cs-meta{font-size:16px;line-height:21.45px;margin-top:66.5px}
+ .cs-blocks{margin-top:146.5px}
  .blk,.pair{margin-bottom:100px}
  .pair{margin-left:10.1429%;margin-right:10.1429%;gap:20px}
  .cs-end{height:344px}
