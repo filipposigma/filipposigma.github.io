@@ -27,6 +27,12 @@ main{flex:1}
 .home-end{height:60px}
 
 /* ---------- info ---------- */
+body.aboutpage{--bg:#FFEF86}
+.info{padding:80px 20px 80px}
+.info .intro{margin:0 0 40px;font-size:24px;line-height:28.5px}
+.info .contact{color:#808080}
+.info .contact p{margin:0 0 21px}
+.info .contact a{display:block;width:max-content}
 .ab{padding:80px 20px 80px;display:grid;align-content:start;grid-template-columns:1fr;gap:21px}
 .ab p{margin:0 0 21px}
 .ab a{display:block;width:max-content}
@@ -51,6 +57,9 @@ main{flex:1}
 .cs-end{height:60px}
 
 @media(min-width:768px){
+ .info{padding:104px 20px 80px}
+ .info .intro{font-size:30px;line-height:35.5px;margin-bottom:38px}
+ .info .contact p{margin-bottom:24.5px}
  .blk.b3{aspect-ratio:1126/588}
  .blk.b3 video{left:16%;width:68%;top:6.46%;transform:none}
  body{font-size:18px;line-height:23.5px}
