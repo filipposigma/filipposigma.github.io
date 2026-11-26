@@ -12,7 +12,7 @@ ul{list-style:none}
 main{flex:1}
 
 /* ---------- header: hides on scroll down, returns on scroll up ---------- */
-.site-head{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;padding:14px 20px 12px;background:var(--bg);transition:transform .3s ease,background-color .2s ease,color .2s ease}
+.site-head{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;padding:20px 20px 12px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:24px;line-height:28px;background:var(--bg);transition:transform .3s ease,background-color .2s ease,color .2s ease}
 .site-head.hide{transform:translateY(-100%)}
 .site-head:focus-within{transform:none}
 .site-head.over{background:transparent;color:#fff}
@@ -29,15 +29,10 @@ main{flex:1}
 /* ---------- info ---------- */
 
 body.aboutpage{--bg:#fff}
-.info{flex:1;display:flex;flex-direction:column;padding:80px 20px 24px}
-.info .intro{margin:0 0 40px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:26px;line-height:30px}
-.info .contact{margin-top:auto;padding-top:40px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:26px;line-height:30px}
+.info{flex:1;position:relative;padding:20px 20px 24px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:24px;line-height:28px}
+.info .intro{margin:0 0 28px;max-width:1112px;padding-right:72px}
+.info .close{position:absolute;top:20px;right:20px}
 .info .contact a{display:block;width:max-content}
-.ab{padding:80px 20px 80px;display:grid;align-content:start;grid-template-columns:1fr;gap:21px}
-.ab p{margin:0 0 21px}
-.ab a{display:block;width:max-content}
-.ab .col2 p:last-child{margin:0}
-
 /* ---------- case study ---------- */
 .cs-hero{width:100%;height:100vh;height:100svh;min-height:420px;background:#B0B0B0;overflow:hidden}
 .cs-hero img{display:block;width:100%;height:100%;object-fit:cover}
@@ -47,7 +42,7 @@ body.aboutpage{--bg:#fff}
 .nm{color:#702DFF}
 .cs-lead{padding:0 20px;margin-top:24px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:26px;line-height:30px}
 .cs-lead p.clamp{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
-.more{display:inline-block;padding:0;margin:12px 0 0;background:none;border:0;font:inherit;color:inherit;text-decoration:underline;cursor:pointer}
+.more{display:inline-block;padding:0;margin:12px 0 0;background:none;border:0;font:inherit;color:inherit;text-decoration:none;cursor:pointer}
 .more[hidden]{display:none}
 .cs-meta{padding:0 20px;margin-top:24px;font-size:14px;line-height:19px;color:#6F6F6F}
 .cs-blocks{padding:0 20px;margin-top:60px}
@@ -63,23 +58,24 @@ body.aboutpage{--bg:#fff}
 .cs-end{height:60px}
 
 @media(min-width:768px){
- .info{padding:104px 20px 24px}
- .info .intro{font-size:40px;line-height:40.5px;letter-spacing:-.3px;margin-bottom:38px}
- .info .contact{font-size:40px;line-height:40.5px}
+ .info{padding:17.5px 20px 24px;font-size:32px;line-height:37.5px;letter-spacing:-.32px}
+ .info .intro{margin-bottom:36px;padding-right:0}
+ .info .close{top:17.5px;right:68px}
+ .site-head{font-size:32px;line-height:37.5px;letter-spacing:-.32px;padding:18.9px 20px 12px}
  .blk.b3{aspect-ratio:1126/588}
  .singer .blk.b3{aspect-ratio:1400/930}
  .blk.b3 video{left:16%;width:68%;top:6.46%;transform:none}
  body{font-size:18px;line-height:23.5px}
- .site-head{display:grid;grid-template-columns:50.893% 1fr;padding:16.4px 20px 12px}
+ .site-head{display:grid;grid-template-columns:50.893% 1fr;padding:18.9px 20px 12px}
  .cards{grid-template-columns:1fr 1fr;gap:65.057px 20px;margin-top:103px}
  .card .cap{margin-top:16px}
  .home-end{height:123px}
  .ab{grid-template-columns:50.893% 1fr;gap:0;padding:103px 20px 80px}
  .ab .col1{max-width:690px}
  .ab p{margin-bottom:23.5px}
- .cs-lead{margin-top:16px;font-size:40px;line-height:45.5px}
- .cs-meta{font-size:16px;line-height:21.45px;margin-top:66.5px}
- .cs-blocks{margin-top:146.5px}
+ .cs-lead{margin-top:19px;font-size:32px;line-height:37.5px}
+ .cs-meta{font-size:15px;line-height:18px;margin-top:26.5px}
+ .cs-blocks{margin-top:159px}
  .blk,.pair{margin-bottom:100px}
  .pair{margin-left:10.1429%;margin-right:10.1429%;gap:20px}
  .cs-end{height:344px}
