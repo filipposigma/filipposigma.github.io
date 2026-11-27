@@ -32,7 +32,7 @@ body.aboutpage{--bg:#fff}
 .info{flex:1;position:relative;padding:16px 20px 24px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:22px;line-height:25px;letter-spacing:-.26px}
 .info .intro{margin:0 0 25px}
 .info .contact a{display:block;width:max-content}
-.info .intro a{color:#FF6A00}
+.info .intro a{color:inherit}
 .card .cap{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:16px;line-height:20px}
 /* ---------- case study ---------- */
 .cs-hero{position:relative;z-index:0;width:100%;height:250px;background:#B0B0B0;overflow:hidden}
@@ -71,8 +71,8 @@ body.aboutpage{--bg:#fff}
  .cs-story h2,.cs-story p{letter-spacing:0}
  .cs-lead{letter-spacing:0}
  .card .cap{font-size:30px;line-height:33px}
- .info{padding:16px 20px 24px;font-size:50px;line-height:53px;letter-spacing:-.3px}
- .info .intro{margin-bottom:53px}
+ .info{padding:17px 20px 24px;font-size:30px;line-height:33px;letter-spacing:-.3px}
+ .info .intro{margin-bottom:36px}
  .site-head{font-size:30px;line-height:33px;letter-spacing:-.3px;padding:19.4px 20px 12px}
  .blk.b3{aspect-ratio:1126/588}
  .lsd .blk.b3{aspect-ratio:1400/930}
