@@ -60,7 +60,7 @@ body.aboutpage{--bg:#fff}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 60px}
 .cs-story{padding:0 20px}
 .cs-story .row{margin:0 0 40px}
-.cs-story h2{font:inherit;font-size:26px;line-height:30px;font-weight:500;color:#6F6F6F;margin:0 0 10px}
+.cs-story h2{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:26px;line-height:30px;color:#000;margin:0 0 10px}
 .cs-story p{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-size:26px;line-height:30px;margin:0}
 .pair .blk{aspect-ratio:548/612;margin:0}
 .cs-end{height:60px}
