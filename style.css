@@ -34,8 +34,10 @@ main{flex:1}
 
 body.aboutpage{--bg:#fff}
 .info{flex:1;position:relative;padding:16px 20px 24px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:22px;line-height:25px;letter-spacing:-.26px}
-.info .intro{margin:0 0 25px}
+.info p{margin:0 0 25px}
+.info .close{display:block;width:max-content;margin-top:25px}
 .info .contact a{display:block;width:max-content}
+.info .contact p+p{margin-bottom:0}
 .info .intro a{color:inherit}
 .card .cap{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:16px;line-height:20px}
 /* ---------- case study ---------- */
@@ -75,8 +77,10 @@ body.aboutpage{--bg:#fff}
  .cs-story h2,.cs-story p{letter-spacing:0}
  .cs-lead{letter-spacing:0}
  .card .cap{font-size:30px;line-height:33px}
- .info{padding:17px 20px 24px;font-size:30px;line-height:33px;letter-spacing:-.3px}
- .info .intro{margin-bottom:36px}
+ .info{display:grid;grid-template-columns:50.893% 1fr;align-content:start;padding:16px 20px 24px;font-size:30px;line-height:33px;letter-spacing:-.3px}
+ .info .col1{padding-right:0;max-width:689px}
+ .info p{margin-bottom:33px}
+ .info .close{position:absolute;top:19.4px;right:20px;margin:0}
  .site-head{font-size:30px;line-height:33px;letter-spacing:-.3px;padding:19.4px 20px 12px}
  .blk.b3{aspect-ratio:1126/588}
  .lsd .blk.b3{aspect-ratio:1400/930}
