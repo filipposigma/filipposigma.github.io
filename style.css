@@ -66,9 +66,9 @@ body.aboutpage{--bg:#fff}
 .cs-end{height:60px}
 
 @media(min-width:768px){
- .info{padding:17px 20px 24px;font-size:32px;line-height:37.5px;letter-spacing:-.32px}
+ .info{padding:17px 20px 24px;font-size:30px;line-height:33px;letter-spacing:-.3px}
  .info .intro{margin-bottom:36px}
- .site-head{font-size:28px;line-height:33.5px;letter-spacing:-.28px;padding:20.4px 20px 12px}
+ .site-head{font-size:30px;line-height:33px;letter-spacing:-.3px;padding:20.4px 20px 12px}
  .blk.b3{aspect-ratio:1126/588}
  .lsd .blk.b3{aspect-ratio:1400/930}
  .blk.b3 video{left:16%;width:68%;top:6.46%;transform:none}
@@ -80,14 +80,14 @@ body.aboutpage{--bg:#fff}
  .ab{grid-template-columns:50.893% 1fr;gap:0;padding:103px 20px 80px}
  .ab .col1{max-width:690px}
  .ab p{margin-bottom:23.5px}
- .cs-lead{margin-top:74px;font-size:32px;line-height:37.5px}
+ .cs-lead{margin-top:74px;font-size:30px;line-height:33px}
  .cs-meta{font-size:14px;line-height:18px;margin-top:34px}
  .cs-blocks{margin-top:159px}
  .blk,.pair{margin-bottom:100px}
  .pair{margin-left:10.1429%;margin-right:10.1429%;gap:20px}
  .cs-story{display:grid;grid-template-columns:50.893% 1fr}
  .cs-story .row{display:contents}
- .cs-story h2{grid-column:1;margin:0 0 60px;font-size:32px;line-height:37.5px}
- .cs-story p{grid-column:2;font-size:32px;line-height:37.5px;margin:0 0 60px}
+ .cs-story h2{grid-column:1;margin:0 0 60px;font-size:30px;line-height:33px}
+ .cs-story p{grid-column:2;font-size:30px;line-height:33px;margin:0 0 60px}
  .cs-end{height:344px}
 }
