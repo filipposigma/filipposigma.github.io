@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lifescience Dynamics · Filippos Saltsidis</title>
+<meta name="description" content="Lifescience Dynamics: a brand and responsive website proposal.">
+<meta property="og:title" content="Lifescience Dynamics · Filippos Saltsidis"><meta property="og:description" content="Lifescience Dynamics: a brand and responsive website proposal.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='34' text-anchor='middle' fill='%23fff'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="../style.css?v=38">
+</head><body class="cspage lsd">
+<header class="site-head over"><a href="../index.html">Filippos Saltsidis</a><a href="../about.html">Info</a></header>
+<main>
+<div class="cs-hero fit lsd"><img src="../img/lsd-hero-2.jpg" alt="The Lifescience Dynamics website on a tablet: Converting insight into foresight"></div>
+<div class="cs-body">
+<h1 class="sr">Lifescience Dynamics</h1>
+<div class="cs-lead">
+<p id="lead"><span class="nm">Lifescience Dynamics</span> helps biopharma companies turn insight into foresight, from market research and competitive intelligence to market access. But a consultancy whose work is complex has to look simple, or clients never get past the first page. This proposal rethinks the brand and the website around that idea: one clear message at the top, and every service explained in plain, scannable language. <br><br>The design pairs a bold purple hero and deep purple pages with calm white ones, a clear type hierarchy where a short statement leads and the detail follows, and a 12-column grid that holds the desktop, tablet and mobile layouts together. Even dense content, like the list of medical conferences, becomes a clean table that stays easy to read on a phone.</p>
+<button class="more" type="button" aria-controls="lead" aria-expanded="false" hidden>read more</button>
+</div>
+<ul class="cs-meta">
+<li>Services: UX/UI Designer, Brand Designer</li>
+<li>Project: Proposal</li>
+<li>Tools: Figma, Illustrator, InDesign</li>
+<li>Format: Screen, Desktop, Mobile, Print</li>
+</ul>
+<div class="cs-blocks">
+<div class="blk b2" role="presentation"></div>
+<div class="pair"><div class="blk" role="presentation"></div><div class="blk" role="presentation"></div></div>
+<div class="blk b3" role="presentation"></div>
+</div>
+<div class="cs-end"></div>
+</div>
+</main>
+<script>
+(function(){
+  var p=document.getElementById("lead"), b=document.querySelector(".more");
+  if(!p||!b) return;
+  function check(){
+    if(p.classList.contains("open")) return;
+    p.classList.add("clamp");
+    b.hidden = !(p.scrollHeight > p.clientHeight + 1);
+  }
+  b.addEventListener("click",function(){
+    var open=p.classList.toggle("open");
+    p.classList.toggle("clamp",!open);
+    b.setAttribute("aria-expanded",open);
+    b.textContent=open?"read less":"read more";
+  });
+  check(); window.addEventListener("resize",check);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(check);
+})();
+</script>
+<script>
+(function(){
+  var h=document.querySelector(".site-head"); if(!h) return;
+  var hero=document.querySelector(".cs-hero"), last=window.scrollY, busy=false;
+  function update(){
+    var y=window.scrollY;
+    if(y<=8){ h.classList.remove("hide"); last=y; }
+    else if(Math.abs(y-last)>=6){
+      h.classList.toggle("hide", y>last);
+      last=y;
+    }
+    if(hero){ var bd=document.querySelector(".cs-body"); h.classList.toggle("over", bd.getBoundingClientRect().top > h.offsetHeight); }
+    busy=false;
+  }
+  window.addEventListener("scroll",function(){ if(!busy){ busy=true; requestAnimationFrame(update); } },{passive:true});
+  window.addEventListener("resize",update); update();
+})();
+</script>
+</body></html>

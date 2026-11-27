@@ -52,7 +52,8 @@ body.aboutpage{--bg:#fff}
 .blk{width:100%;margin:0 0 60px;background:#B0B0B0;overflow:hidden}
 .blk.b2{aspect-ratio:1400/930}
 .blk>img{display:block;width:100%;height:100%;object-fit:cover}
-.singer .nm{color:#00DC0A}
+.lsd .nm{color:#BD18E5}
+.cs-hero.lsd{background:#C9C9C8}
 .blk.b3{aspect-ratio:4/3;position:relative}
 .singer .blk.b3{aspect-ratio:1400/930}
 .blk.b3 video{position:absolute;left:7%;width:86%;height:auto;top:50%;transform:translateY(-50%);display:block}
