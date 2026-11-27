@@ -12,7 +12,7 @@ ul{list-style:none}
 main{flex:1}
 
 /* ---------- header: hides on scroll down, returns on scroll up ---------- */
-.site-head{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;padding:16px 20px 12px;font-family:Inter,Helvetica,Arial,sans-serif;font-weight:500;font-size:18px;line-height:22px;letter-spacing:-.4px;background:var(--bg);transition:transform .3s ease,background-color .2s ease,color .2s ease}
+.site-head{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;padding:16px 20px 12px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:22px;line-height:25px;letter-spacing:-.26px;background:var(--bg);transition:transform .3s ease,background-color .2s ease,color .2s ease}
 .site-head.hide{transform:translateY(-100%)}
 .site-head:focus-within{transform:none}
 .site-head.over{background:transparent;color:#fff}
@@ -70,15 +70,15 @@ body.aboutpage{--bg:#fff}
  .cs-story{margin-top:0}
  .cs-story h2,.cs-story p{letter-spacing:0}
  .cs-lead{letter-spacing:0}
- .card .cap{font-size:30px;line-height:33px}
+ .card .cap{font-size:18px;line-height:23.5px}
  .info{padding:17px 20px 24px;font-size:30px;line-height:33px;letter-spacing:-.3px}
  .info .intro{margin-bottom:36px}
- .site-head{padding:26px 20px 12px}
+ .site-head{font-size:30px;line-height:33px;letter-spacing:-.3px;padding:20.4px 20px 12px}
  .blk.b3{aspect-ratio:1126/588}
  .lsd .blk.b3{aspect-ratio:1400/930}
  .blk.b3 video{left:16%;width:68%;top:6.46%;transform:none}
  body{font-size:18px;line-height:23.5px}
- .site-head{display:grid;grid-template-columns:50.893% 1fr;padding:26px 20px 12px}
+ .site-head{display:grid;grid-template-columns:50.893% 1fr;padding:20.4px 20px 12px}
  .cards{grid-template-columns:1fr 1fr;gap:65.057px 20px;margin-top:103px}
  .card .cap{margin-top:16px}
  .home-end{height:123px}
