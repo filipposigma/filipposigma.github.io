@@ -42,8 +42,9 @@ body.aboutpage{--bg:#fff}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .nm{color:#702DFF}
 .cs-lead{padding:0 20px;margin-top:24px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:26px;line-height:30px}
+.cs-lead p.clamp br{display:none}
 .cs-lead p.clamp{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
-.more{display:inline-block;padding:0;margin:12px 0 0;background:none;border:0;font:inherit;color:inherit;text-decoration:none;cursor:pointer}
+.more{display:inline-block;padding:0;margin:16px 0 0;background:none;border:0;font:inherit;color:inherit;text-decoration:underline;cursor:pointer}
 .more[hidden]{display:none}
 .cs-meta{padding:0 20px;margin-top:24px;font-size:14px;line-height:19px;color:#6F6F6F}
 .cs-blocks{padding:0 20px;margin-top:60px}
