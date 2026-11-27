@@ -59,8 +59,8 @@ body.aboutpage{--bg:#fff}
 .cs-end{height:60px}
 
 @media(min-width:768px){
- .info{padding:16px 20px 24px;font-size:28px;line-height:33.5px;letter-spacing:-.28px}
- .info .intro{margin-bottom:33.5px}
+ .info{padding:17px 20px 24px;font-size:32px;line-height:37.5px;letter-spacing:-.32px}
+ .info .intro{margin-bottom:36px}
  .site-head{font-size:28px;line-height:33.5px;letter-spacing:-.28px;padding:20.4px 20px 12px}
  .blk.b3{aspect-ratio:1126/588}
  .singer .blk.b3{aspect-ratio:1400/930}
@@ -73,8 +73,8 @@ body.aboutpage{--bg:#fff}
  .ab{grid-template-columns:50.893% 1fr;gap:0;padding:103px 20px 80px}
  .ab .col1{max-width:690px}
  .ab p{margin-bottom:23.5px}
- .cs-lead{margin-top:19px;font-size:28px;line-height:33.5px}
- .cs-meta{font-size:14px;line-height:18px;margin-top:39.5px}
+ .cs-lead{margin-top:19px;font-size:32px;line-height:37.5px}
+ .cs-meta{font-size:14px;line-height:18px;margin-top:26.5px}
  .cs-blocks{margin-top:159px}
  .blk,.pair{margin-bottom:100px}
  .pair{margin-left:10.1429%;margin-right:10.1429%;gap:20px}
