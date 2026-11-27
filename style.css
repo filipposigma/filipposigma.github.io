@@ -25,6 +25,10 @@ main{flex:1}
 .card .im img{width:100%;height:100%;object-fit:cover}
 .card .cap{margin-top:8px}
 .home-end{height:70px}
+.slider{display:none}
+.cats{display:flex;flex-wrap:wrap;justify-content:center;gap:0 20px;padding:83px 20px 0;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-size:22px;line-height:25px;letter-spacing:-.26px}
+.cards.proj{margin-top:28px}
+.card .cap .yr{display:inline}
 
 /* ---------- info ---------- */
 
@@ -82,9 +86,17 @@ body.aboutpage{--bg:#fff}
  .cards{grid-template-columns:1fr 1fr;gap:65.057px 20px;margin-top:103px}
  .card .cap{margin-top:16px}
  .home-end{height:123px}
- .cards.full{grid-template-columns:1fr;gap:0;padding:0;margin-top:102px}
- .cards.full .cap{display:none}
- .cards.full+.home-end{height:0}
+ .cards.full{display:none}
+ .slider{display:block;width:60.5%;margin:147px auto 0}
+ .slides{position:relative;aspect-ratio:690/480;background:#C9C9C8;overflow:hidden}
+ .slide{position:absolute;inset:0;opacity:0;transition:opacity .6s ease}
+ .slide.is-on{opacity:1}
+ .slide img{width:100%;height:100%;object-fit:cover}
+ .slide-cap{margin-top:43px;text-align:center;letter-spacing:-.25px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-size:30px;line-height:33px;transition:opacity .25s ease}
+ .slide-cap.swap{opacity:0}
+ .cats{gap:0 28px;padding:129px 20px 0;font-size:24px;line-height:27.5px;letter-spacing:-.24px}
+ .cards.proj{gap:20px;padding:0 calc(20px + (100% - 40px)*.101429);margin-top:38.5px}
+ .slider+.home-end,.cards.full+.home-end{height:100px}
  .ab{grid-template-columns:50.893% 1fr;gap:0;padding:103px 20px 80px}
  .ab .col1{max-width:690px}
  .ab p{margin-bottom:23.5px}
@@ -98,4 +110,17 @@ body.aboutpage{--bg:#fff}
  .cs-story h2{grid-column:1 / span 3;margin:0 0 33px;font-size:30px;line-height:33px}
  .cs-story p{grid-column:4 / -1;font-size:30px;line-height:33px;margin:0 0 33px}
  .cs-end{height:344px}
+}
+
+/* Projects page: on hover the thumbnail turns white and shows the title (devices with a mouse) */
+@media(min-width:768px) and (hover:hover){
+ .cards.proj .card{position:relative;display:block}
+ .cards.proj .card .im img{transition:opacity .2s ease}
+ .cards.proj .card .im{background:#C9C9C8;transition:background-color .2s ease}
+ .cards.proj .cap{position:absolute;inset:0;margin:0;font-size:24px;line-height:27.5px;letter-spacing:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0;transition:opacity .2s ease;pointer-events:none}
+ .cards.proj .cap .n,.cards.proj .cap .yr{display:block}
+ .cards.proj .cap .c{display:none}
+ .cards.proj .card:hover .im,.cards.proj .card:focus-visible .im{background:#fff}
+ .cards.proj .card:hover .im img,.cards.proj .card:focus-visible .im img{opacity:0}
+ .cards.proj .card:hover .cap,.cards.proj .card:focus-visible .cap{opacity:1}
 }

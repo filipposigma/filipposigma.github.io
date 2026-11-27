@@ -8,16 +8,39 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=60">
+<link rel="stylesheet" href="style.css?v=65">
 </head><body class="home-page">
 <header class="site-head"><span aria-current="page">Filippos Saltsidis</span><a href="/projects">Projects</a><a href="/about">Info</a></header>
 <main>
+<section class="slider" aria-roledescription="carousel" aria-label="Selected projects">
+<div class="slides">
+<a class="slide is-on" href="/work/dashboard" data-name="Capital City College"><img src="img/home/ccc-cover.jpg" alt="Redesigned Capital City College student dashboard shown on a laptop"></a>
+<a class="slide" href="/work/lifescience-dynamics" data-name="Lifescience Dynamics"><img src="img/home/lsd-cover.jpg" alt="The Lifescience Dynamics website on a tablet" loading="lazy"></a>
+</div>
+<p class="slide-cap" aria-live="off">Capital City College</p>
+</section>
 <div class="cards full">
-<a class="card" href="/work/dashboard"><div class="im"><img src="img/home/ccc-cover.jpg" alt="Redesigned Capital City College student dashboard shown on a laptop"></div><p class="cap">Capital City College, 2026</p></a>
-<a class="card" href="/work/lifescience-dynamics"><div class="im"><img src="img/home/lsd-cover.jpg" alt="The Lifescience Dynamics website on a tablet"></div><p class="cap">Lifescience Dynamics, 2025</p></a>
+<a class="card" href="/work/dashboard"><div class="im"><img src="img/home/ccc-cover.jpg" alt="Redesigned Capital City College student dashboard shown on a laptop"></div><p class="cap"><span class="n">Capital City College</span><span class="c">,</span><span class="yr"> 2026</span></p></a>
+<a class="card" href="/work/lifescience-dynamics"><div class="im"><img src="img/home/lsd-cover.jpg" alt="The Lifescience Dynamics website on a tablet"></div><p class="cap"><span class="n">Lifescience Dynamics</span><span class="c">,</span><span class="yr"> 2025</span></p></a>
 </div>
 <div class="home-end"></div>
 </main>
+<script>
+(function(){
+  var box=document.querySelector(".slider"); if(!box) return;
+  var slides=[].slice.call(box.querySelectorAll(".slide")), cap=box.querySelector(".slide-cap"), i=0, t=null, paused=false;
+  if(slides.length<2) return;
+  function show(n){
+    slides[i].classList.remove("is-on"); i=n%slides.length; slides[i].classList.add("is-on");
+    cap.classList.add("swap");
+    setTimeout(function(){ cap.textContent=slides[i].getAttribute("data-name"); cap.classList.remove("swap"); },250);
+  }
+  function start(){ if(t||matchMedia("(prefers-reduced-motion: reduce)").matches) return; t=setInterval(function(){ if(!paused&&!document.hidden) show(i+1); },4500); }
+  box.addEventListener("mouseenter",function(){paused=true;}); box.addEventListener("mouseleave",function(){paused=false;});
+  box.addEventListener("focusin",function(){paused=true;}); box.addEventListener("focusout",function(){paused=false;});
+  start();
+})();
+</script>
 <script>
 (function(){
   var h=document.querySelector(".site-head"); if(!h) return;
