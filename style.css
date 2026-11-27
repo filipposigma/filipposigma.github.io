@@ -34,12 +34,11 @@ main{flex:1}
 /* ---------- info ---------- */
 
 body.aboutpage{--bg:#fff}
-.info{flex:1;position:relative;padding:16px 20px 24px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:22px;line-height:25px;letter-spacing:-.26px}
+.info{flex:1;position:relative;padding:83px 20px 24px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:22px;line-height:25px;letter-spacing:-.26px}
 .info p{margin:0 0 25px}
-.info .close{display:block;width:max-content;margin-top:25px}
+.info-head{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:16px 20px 0}
 .info .contact a{display:block;width:max-content}
 .info .contact p+p{margin-bottom:0}
-.info .intro a{color:inherit}
 .card .cap{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:16px;line-height:20px}
 /* ---------- case study ---------- */
 .cs-hero{position:relative;z-index:0;width:100%;height:250px;background:#B0B0B0;overflow:hidden}
@@ -78,14 +77,17 @@ body.aboutpage{--bg:#fff}
  .cs-story h2,.cs-story p{letter-spacing:-.3px}
  .cs-lead{letter-spacing:0}
  .card .cap{font-size:30px;line-height:33px}
- .info{display:grid;grid-template-columns:50.893% 1fr;align-content:start;padding:16px 20px 24px;font-size:30px;line-height:33px;letter-spacing:-.3px}
- .info .col1{padding-right:0;max-width:689px}
- .info p{margin-bottom:33px}
- .info .close{position:absolute;top:19.4px;right:20px;margin:0}
+ .info{display:grid;grid-template-columns:50.893% 1fr;align-content:start;padding:127px 20px 24px;font-size:30px;line-height:33px;letter-spacing:-.3px}
+ .info-head{padding:19.4px 20px 0}
+ .info .col1{max-width:689px}
+ .info p{margin-bottom:0}
+ .info .col2{margin-left:-2px}
+ .info .contact{grid-column:1;margin-top:58.5px}
+ .info .contact p:first-child{margin-bottom:33px}
  .site-head{font-size:30px;line-height:33px;letter-spacing:-.3px;padding:19.4px 20px 12px}
  .lsd .blk.b3{aspect-ratio:1400/930}
  body{font-size:18px;line-height:23.5px}
- .site-head{display:grid;grid-template-columns:50.893% 1fr auto;padding:19.4px 20px 12px}
+ .site-head{display:grid;grid-template-columns:1fr auto;padding:19.4px 20px 12px}
  .cards{grid-template-columns:1fr 1fr;gap:65.057px 20px;margin-top:103px}
  .card .cap{margin-top:16px}
  .home-end{height:123px}
