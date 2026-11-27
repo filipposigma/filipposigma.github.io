@@ -5,11 +5,12 @@
 <meta name="description" content="Capital City College student dashboard redesign: a UX/UI concept project.">
 <meta property="og:title" content="Capital City College · Filippos Saltsidis"><meta property="og:description" content="Capital City College student dashboard redesign: a UX/UI concept project.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='34' text-anchor='middle' fill='%23fff'%3EF%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="../style.css?v=32">
+<link rel="stylesheet" href="../style.css?v=33">
 </head><body class="cspage">
 <header class="site-head over"><a href="../index.html">Filippos Saltsidis</a><a href="../about.html">Info</a></header>
 <main>
 <div class="cs-hero fit"><img src="../img/ccc-hero.jpg" alt="The redesigned dashboard: next lesson, student services, attendance overview and the report an absence button"></div>
+<div class="cs-body">
 <h1 class="sr">Capital City College</h1>
 <div class="cs-lead">
 <p id="lead"><span class="nm">Capital City College</span> students open the portal for one thing: when is my next lesson? The old dashboard hid the answer in a wall of tiles. This redesign puts it first, with messages and attendance close behind and a report-an-absence button that is easy to find when it matters.</p>
@@ -29,6 +30,7 @@
 <div class="blk b3"><video src="../img/video/report-absence.mp4" poster="../img/video/report-absence.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Prototype: reporting an absence from the dashboard"></video></div>
 </div>
 <div class="cs-end"></div>
+</div>
 </main>
 <script>
 (function(){
@@ -60,7 +62,7 @@
       h.classList.toggle("hide", y>last);
       last=y;
     }
-    if(hero) h.classList.toggle("over", y < hero.offsetHeight-h.offsetHeight);
+    if(hero){ var bd=document.querySelector(".cs-body"); h.classList.toggle("over", bd.getBoundingClientRect().top > h.offsetHeight); }
     busy=false;
   }
   window.addEventListener("scroll",function(){ if(!busy){ busy=true; requestAnimationFrame(update); } },{passive:true});
