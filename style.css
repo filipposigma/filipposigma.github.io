@@ -52,7 +52,7 @@ body.aboutpage{--bg:#fff}
 .blk{width:100%;margin:0 0 60px;background:#B0B0B0;overflow:hidden}
 .blk.b2{aspect-ratio:1400/930}
 .blk>img{display:block;width:100%;height:100%;object-fit:cover}
-.lsd .nm{color:#BD18E5}
+.lsd .nm{color:#6F2280}
 .cs-hero.lsd{background:#C9C9C8}
 .blk.b3{aspect-ratio:4/3;position:relative}
 .singer .blk.b3{aspect-ratio:1400/930}
@@ -66,7 +66,7 @@ body.aboutpage{--bg:#fff}
  .info .intro{margin-bottom:36px}
  .site-head{font-size:28px;line-height:33.5px;letter-spacing:-.28px;padding:20.4px 20px 12px}
  .blk.b3{aspect-ratio:1126/588}
- .singer .blk.b3{aspect-ratio:1400/930}
+ .lsd .blk.b3{aspect-ratio:1400/930}
  .blk.b3 video{left:16%;width:68%;top:6.46%;transform:none}
  body{font-size:18px;line-height:23.5px}
  .site-head{display:grid;grid-template-columns:50.893% 1fr;padding:20.4px 20px 12px}
