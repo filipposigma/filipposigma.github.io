@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projects · Filippos Saltsidis</title>
+<meta name="description" content="Selected UX/UI projects by Filippos Saltsidis.">
+<meta property="og:title" content="Projects · Filippos Saltsidis"><meta property="og:description" content="Selected UX/UI projects by Filippos Saltsidis.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='34' text-anchor='middle' fill='%23fff'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=58">
+</head><body class="home-page">
+<header class="site-head"><a href="index.html">Filippos Saltsidis</a><span aria-current="page">Projects</span><a href="about.html">Info</a></header>
+<main>
+<div class="cards">
+<a class="card" href="work/dashboard.html"><div class="im"><img src="img/home/ccc-cover.jpg" alt="Redesigned Capital City College student dashboard shown on a laptop"></div><p class="cap">Capital City College, 2026</p></a>
+<a class="card" href="work/lifescience-dynamics.html"><div class="im"><img src="img/home/lsd-cover.jpg" alt="The Lifescience Dynamics website on a tablet"></div><p class="cap">Lifescience Dynamics, 2025</p></a>
+</div>
+<div class="home-end"></div>
+</main>
+<script>
+(function(){
+  var h=document.querySelector(".site-head"); if(!h) return;
+  var hero=document.querySelector(".cs-hero"), last=window.scrollY, busy=false;
+  function update(){
+    var y=window.scrollY;
+    if(y<=8){ h.classList.remove("hide"); last=y; }
+    else if(Math.abs(y-last)>=6){
+      h.classList.toggle("hide", y>last);
+      last=y;
+    }
+    if(hero){ var bd=document.querySelector(".cs-body"); h.classList.toggle("over", bd.getBoundingClientRect().top > h.offsetHeight); }
+    busy=false;
+  }
+  window.addEventListener("scroll",function(){ if(!busy){ busy=true; requestAnimationFrame(update); } },{passive:true});
+  window.addEventListener("resize",update); update();
+})();
+</script>
+</body></html>

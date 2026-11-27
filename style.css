@@ -70,18 +70,21 @@ body.aboutpage{--bg:#fff}
  .cs-story{margin-top:0}
  .cs-story h2,.cs-story p{letter-spacing:0}
  .cs-lead{letter-spacing:0}
- .card .cap{font-size:18px;line-height:23.5px}
- .info{padding:17px 20px 24px;font-size:30px;line-height:33px;letter-spacing:-.3px}
- .info .intro{margin-bottom:36px}
- .site-head{font-size:30px;line-height:33px;letter-spacing:-.3px;padding:20.4px 20px 12px}
+ .card .cap{font-size:30px;line-height:33px}
+ .info{padding:16px 20px 24px;font-size:50px;line-height:53px;letter-spacing:-.3px}
+ .info .intro{margin-bottom:53px}
+ .site-head{font-size:30px;line-height:33px;letter-spacing:-.3px;padding:19.4px 20px 12px}
  .blk.b3{aspect-ratio:1126/588}
  .lsd .blk.b3{aspect-ratio:1400/930}
  .blk.b3 video{left:16%;width:68%;top:6.46%;transform:none}
  body{font-size:18px;line-height:23.5px}
- .site-head{display:grid;grid-template-columns:50.893% 1fr;padding:20.4px 20px 12px}
+ .site-head{display:grid;grid-template-columns:50.893% 1fr auto;padding:19.4px 20px 12px}
  .cards{grid-template-columns:1fr 1fr;gap:65.057px 20px;margin-top:103px}
  .card .cap{margin-top:16px}
  .home-end{height:123px}
+ .cards.full{grid-template-columns:1fr;gap:0;padding:0;margin-top:102px}
+ .cards.full .cap{display:none}
+ .cards.full+.home-end{height:0}
  .ab{grid-template-columns:50.893% 1fr;gap:0;padding:103px 20px 80px}
  .ab .col1{max-width:690px}
  .ab p{margin-bottom:23.5px}
