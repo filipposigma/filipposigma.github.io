@@ -74,7 +74,7 @@ body.aboutpage{--bg:#fff}
 @media(min-width:768px){
  .cs-hero{position:sticky;top:0;height:100vh;height:100svh;min-height:420px}
  .cs-story{margin-top:0}
- .cs-story h2,.cs-story p{letter-spacing:0}
+ .cs-story h2,.cs-story p{letter-spacing:-.3px}
  .cs-lead{letter-spacing:0}
  .card .cap{font-size:30px;line-height:33px}
  .info{display:grid;grid-template-columns:50.893% 1fr;align-content:start;padding:16px 20px 24px;font-size:30px;line-height:33px;letter-spacing:-.3px}
@@ -109,10 +109,11 @@ body.aboutpage{--bg:#fff}
  .cs-blocks{margin-top:159px}
  .blk,.pair{margin-bottom:100px}
  .pair{margin-left:10.1429%;margin-right:10.1429%;gap:20px}
- .cs-story{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));column-gap:20px}
- .cs-story .row{display:contents}
- .cs-story h2{grid-column:1 / span 3;margin:0 0 33px;font-size:30px;line-height:33px}
- .cs-story p{grid-column:4 / -1;font-size:30px;line-height:33px;margin:0 0 33px}
+ .cs-story{display:grid;grid-template-columns:50.893% 1fr}
+ .cs-story .col:first-child{padding-right:20px}
+ .cs-story .row{margin:0 0 66px}
+ .cs-story h2{margin:0 0 33px;font-size:30px;line-height:33px}
+ .cs-story p{font-size:30px;line-height:33px;margin:0}
  .cs-end{height:344px}
 }
 
