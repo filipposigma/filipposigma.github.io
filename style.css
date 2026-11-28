@@ -148,14 +148,3 @@ main{flex:1}
  .cspage .cs-body>.cs-meta{order:2;margin-top:34px;text-align:center;list-style:none}
  .cspage .cs-hero{order:3;margin:174px 20px 0}
 }
-
-/* ---------- One text style everywhere: Inter 20/25 (the big project intro on desktop stays 48/51) ---------- */
-body,body .site-head,body .cats,body .cats span,body .card .cap,body .cards.proj .cap,body .cs-lead,body .more,body .cs-meta,body .cs-story h2,body .cs-story p,body .about-card,body .ac-right,body .ac-left,body .about-card p,body .ac-head,body .ab,body .ab p,body .blk{font-family:Inter,Helvetica,Arial,sans-serif;font-weight:500;font-size:20px;line-height:25px;letter-spacing:0}
-body .about-card .ac-left p{font-size:20px;line-height:25px}
-@media(min-width:768px){
- body .about-card{font-size:20px;line-height:25px;letter-spacing:0}
- body .about-card .ac-left p{margin-bottom:25px}
- body .ac-right{font-size:20px;line-height:25px;letter-spacing:0}
- body .cs-lead{font-size:20px;line-height:25px}
- .cspage .cs-body>.cs-lead{font-size:48px;line-height:51px;letter-spacing:-.48px}
-}
