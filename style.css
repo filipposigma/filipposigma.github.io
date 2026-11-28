@@ -56,8 +56,8 @@ main{flex:1}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin:0 10.1429% 25px}
 .cs-story{padding:0 20px;margin-top:15px}
 .cs-story .row{margin:0 0 50px}
-.cs-story h2{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:22px;line-height:25px;letter-spacing:-.26px;color:#000;margin:0 0 25px}
-.cs-story p{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-size:22px;line-height:25px;letter-spacing:-.26px;margin:0}
+.cs-story h2{font-family:Inter,Helvetica,Arial,sans-serif;font-weight:500;font-size:20px;line-height:25px;letter-spacing:0;color:#000;margin:0 0 25px}
+.cs-story p{font-family:Inter,Helvetica,Arial,sans-serif;font-weight:500;font-size:20px;line-height:25px;letter-spacing:0;margin:0}
 .pair .blk{aspect-ratio:548/612;margin:0}
 .cs-end{height:50px}
 
@@ -65,7 +65,6 @@ main{flex:1}
  .cs-cats{display:flex}
  .cs-hero{position:relative;height:auto;aspect-ratio:1400/930;min-height:0;margin:35.5px 20px 0;width:auto}
  .cs-story{margin-top:0}
- .cs-story h2,.cs-story p{letter-spacing:-.3px}
  .cs-lead{letter-spacing:0}
  .card .cap{font-size:22px;line-height:25px}
  .site-head{font-size:30px;line-height:33px;letter-spacing:-.3px;padding:19.4px 20px 12px}
@@ -148,4 +147,15 @@ main{flex:1}
  .cspage .cs-lead p.clamp{display:block;-webkit-line-clamp:unset;overflow:visible}
  .cspage .cs-body>.cs-meta{order:2;margin-top:34px;text-align:center;list-style:none}
  .cspage .cs-hero{order:3;margin:174px 20px 0}
+}
+
+/* ---------- One text style everywhere: Inter 20/25 (the big project intro on desktop stays 48/51) ---------- */
+body,body .site-head,body .cats,body .cats span,body .card .cap,body .cards.proj .cap,body .cs-lead,body .more,body .cs-meta,body .cs-story h2,body .cs-story p,body .about-card,body .ac-right,body .ac-left,body .about-card p,body .ac-head,body .ab,body .ab p,body .blk{font-family:Inter,Helvetica,Arial,sans-serif;font-weight:500;font-size:20px;line-height:25px;letter-spacing:0}
+body .about-card .ac-left p{font-size:20px;line-height:25px}
+@media(min-width:768px){
+ body .about-card{font-size:20px;line-height:25px;letter-spacing:0}
+ body .about-card .ac-left p{margin-bottom:25px}
+ body .ac-right{font-size:20px;line-height:25px;letter-spacing:0}
+ body .cs-lead{font-size:20px;line-height:25px}
+ .cspage .cs-body>.cs-lead{font-size:48px;line-height:51px;letter-spacing:-.48px}
 }
