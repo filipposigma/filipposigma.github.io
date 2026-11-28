@@ -67,7 +67,7 @@ main{flex:1}
  .cs-story{margin-top:0}
  .cs-story h2,.cs-story p{letter-spacing:-.3px}
  .cs-lead{letter-spacing:0}
- .card .cap{font-size:30px;line-height:33px}
+ .card .cap{font-size:22px;line-height:25px}
  .site-head{font-size:30px;line-height:33px;letter-spacing:-.3px;padding:19.4px 20px 12px}
  .lsd .blk.b3{aspect-ratio:1400/930}
  body{font-size:18px;line-height:23.5px}
@@ -105,7 +105,7 @@ main{flex:1}
  .cards.proj .card{position:relative;display:block}
  .cards.proj .card .im img{transition:opacity .2s ease}
  .cards.proj .card .im{background:#C9C9C8;transition:background-color .2s ease}
- .cards.proj .cap{position:absolute;inset:0;margin:0;font-size:24px;line-height:27.5px;letter-spacing:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0;transition:opacity .2s ease;pointer-events:none}
+ .cards.proj .cap{position:absolute;inset:0;margin:0;font-size:22px;line-height:25px;letter-spacing:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0;transition:opacity .2s ease;pointer-events:none}
  .cards.proj .cap .n,.cards.proj .cap .yr{display:block}
  .cards.proj .cap .c{display:none}
  .cards.proj .card:hover .im,.cards.proj .card:focus-visible .im{background:#fff}
