@@ -133,3 +133,5 @@ main{flex:1}
 }
 
 .site-head a,.site-head a:focus,.site-head a:active,.ac-name,.ac-close{outline:0;border:0;-webkit-tap-highlight-color:transparent}
+.card .cap{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400}
+.cards.proj .cap{letter-spacing:-.26px}
