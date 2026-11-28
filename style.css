@@ -56,8 +56,8 @@ main{flex:1}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin:0 10.1429% 25px}
 .cs-story{padding:0 20px;margin-top:15px}
 .cs-story .row{margin:0 0 50px}
-.cs-story h2{font-family:Inter,Helvetica,Arial,sans-serif;font-weight:500;font-size:20px;line-height:25px;letter-spacing:0;color:#000;margin:0 0 25px}
-.cs-story p{font-family:Inter,Helvetica,Arial,sans-serif;font-weight:500;font-size:20px;line-height:25px;letter-spacing:0;margin:0}
+.cs-story h2{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:22px;line-height:25px;letter-spacing:-.26px;color:#000;margin:0 0 25px}
+.cs-story p{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-size:22px;line-height:25px;letter-spacing:-.26px;margin:0}
 .pair .blk{aspect-ratio:548/612;margin:0}
 .cs-end{height:50px}
 
@@ -66,6 +66,7 @@ main{flex:1}
  .cs-hero{position:relative;height:auto;aspect-ratio:1400/930;min-height:0;margin:35.5px 20px 0;width:auto}
  .cs-story{margin-top:0}
  .cs-lead{letter-spacing:0}
+ .cs-story h2,.cs-story p{letter-spacing:-.3px}
  .card .cap{font-size:22px;line-height:25px}
  .site-head{font-size:30px;line-height:33px;letter-spacing:-.3px;padding:19.4px 20px 12px}
  .lsd .blk.b3{aspect-ratio:1400/930}
@@ -134,17 +135,3 @@ main{flex:1}
 .site-head a,.site-head a:focus,.site-head a:active,.ac-name,.ac-close{outline:0;border:0;-webkit-tap-highlight-color:transparent}
 .card .cap{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400}
 .cards.proj .cap{letter-spacing:-.26px}
-
-@media(min-width:768px){
- .cspage main{display:flex;flex-direction:column}
- .cspage .cs-body{display:contents}
- .cspage .cs-body>*{order:4}
- .cspage .cs-cats{order:0}
- .cspage .cs-body>.cs-lead{order:1;margin-top:38px;padding:0 calc(20px + (100% - 40px)*.101429);text-align:center;font-size:48px;line-height:51px;font-family:Inter,Helvetica,Arial,sans-serif;font-weight:500;letter-spacing:-.48px;color:#702DFF}
- .cspage .cs-lead .nm{color:inherit}
- .cspage .cs-lead p{margin:0}
- .cspage .cs-lead .more{display:none}
- .cspage .cs-lead p.clamp{display:block;-webkit-line-clamp:unset;overflow:visible}
- .cspage .cs-body>.cs-meta{order:2;margin-top:34px;text-align:center;list-style:none}
- .cspage .cs-hero{order:3;margin:174px 20px 0}
-}
