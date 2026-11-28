@@ -135,3 +135,17 @@ main{flex:1}
 .site-head a,.site-head a:focus,.site-head a:active,.ac-name,.ac-close{outline:0;border:0;-webkit-tap-highlight-color:transparent}
 .card .cap{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400}
 .cards.proj .cap{letter-spacing:-.26px}
+
+@media(min-width:768px){
+ .cspage main{display:flex;flex-direction:column}
+ .cspage .cs-body{display:contents}
+ .cspage .cs-body>*{order:4}
+ .cspage .cs-cats{order:0}
+ .cspage .cs-body>.cs-lead{order:1;margin-top:38px;padding:0 calc(20px + (100% - 40px)*.101429);text-align:center;font-size:48px;line-height:51px;letter-spacing:0;color:#702DFF}
+ .cspage .cs-lead .nm{color:inherit}
+ .cspage .cs-lead p{margin:0}
+ .cspage .cs-lead .more{display:none}
+ .cspage .cs-lead p.clamp{display:block;-webkit-line-clamp:unset;overflow:visible}
+ .cspage .cs-body>.cs-meta{order:2;margin-top:34px;text-align:center;list-style:none}
+ .cspage .cs-hero{order:3;margin:174px 20px 0}
+}
