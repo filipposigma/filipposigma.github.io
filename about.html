@@ -2,25 +2,16 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Info · Filippos Saltsidis</title>
-<meta name="description" content="Filippos Saltsidis is a London-based UX/UI designer. Selected work.">
-<meta property="og:title" content="Filippos Saltsidis · UX/UI designer, London"><meta property="og:description" content="Filippos Saltsidis is a London-based UX/UI designer. Selected work.">
+<meta name="description" content="About Filippos Saltsidis, a London-based UX/UI designer.">
+<meta property="og:title" content="Info · Filippos Saltsidis"><meta property="og:description" content="About Filippos Saltsidis, a London-based UX/UI designer.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='34' text-anchor='middle' fill='%23fff'%3EF%3C/text%3E%3C/svg%3E">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=80">
-</head><body class="home-page">
-<header class="site-head"><a href="/">Filippos Saltsidis</a><a href="/about">Info</a></header>
-<main>
-<nav class="cats" aria-label="Project categories"><span>Digital Design</span><span>Branding</span><span>Print</span><span>Publication</span></nav>
-<div class="cards proj">
-<a class="card" href="/work/dashboard"><div class="im"><img src="img/home/ccc-cover.jpg" alt="Redesigned Capital City College student dashboard shown on a laptop"></div><p class="cap"><span class="n">Capital City College</span><span class="c">,</span><span class="yr"> 2026</span></p></a>
-<a class="card" href="/work/lifescience-dynamics"><div class="im"><img src="img/home/lsd-cover.jpg" alt="The Lifescience Dynamics website on a tablet"></div><p class="cap"><span class="n">Lifescience Dynamics</span><span class="c">,</span><span class="yr"> 2025</span></p></a>
-</div>
-<div class="home-end"></div>
-</main>
-<aside id="about-card" class="about-card is-open" aria-label="About Filippos Saltsidis" aria-hidden="false">
-<div class="ac-head"><a class="ac-name" href="/">Filippos Saltsidis</a><button class="ac-close" type="button">Close</button></div>
+<link rel="stylesheet" href="style.css?v=83">
+</head><body class="about-page">
+<main id="about-card" class="about-card" aria-label="About Filippos Saltsidis">
+<div class="ac-head"><a class="ac-name" href="/">Filippos Saltsidis</a><a class="ac-close" href="/">Close</a></div>
 <div class="ac-left">
 <p>Filippos Saltsidis is a London-based UX/UI designer with more than fifteen years of experience in graphic, brand and digital design. I started in print and packaging, ran my own studio, and moved steadily into websites, interfaces and design systems, working with clients and teams in Greece, Berlin and London.</p>
 <p>I work best at the start of a project, when the problem isn't clear yet. Before I open Figma, I try to understand who the product is for, what they're trying to do and where they get stuck. Then I turn that into structure: clear hierarchy, simple flows and components a team can reuse and build.</p>
@@ -33,37 +24,5 @@
 <section><p>Website Programming</p>
 <p>Filippos Saltsidis</p></section>
 </div>
-</aside>
-<script>
-(function(){
-  var card=document.getElementById("about-card"); if(!card) return;
-  var closeBtn=card.querySelector(".ac-close"), last=null;
-  function open(){ last=document.activeElement; card.classList.add("is-open"); card.setAttribute("aria-hidden","false"); setTimeout(function(){closeBtn.focus({preventScroll:true});},50); }
-  function close(){ card.classList.remove("is-open"); card.setAttribute("aria-hidden","true"); if(location.pathname.replace(/\/$/,"")==="/about"){ history.replaceState(null,"","/"); } if(last&&last.focus) last.focus({preventScroll:true}); }
-  document.addEventListener("click",function(e){
-    var a=e.target.closest&&e.target.closest('a[href="/about"]');
-    if(a&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&e.button===0){ e.preventDefault(); open(); }
-  });
-  closeBtn.addEventListener("click",close);
-  document.addEventListener("keydown",function(e){ if(e.key==="Escape"&&card.classList.contains("is-open")) close(); });
-})();
-</script>
-<script>
-(function(){
-  var h=document.querySelector(".site-head"); if(!h) return;
-  var hero=document.querySelector(".cs-hero"), last=window.scrollY, busy=false;
-  function update(){
-    var y=window.scrollY;
-    if(y<=8){ h.classList.remove("hide"); last=y; }
-    else if(Math.abs(y-last)>=6){
-      h.classList.toggle("hide", y>last);
-      last=y;
-    }
-    if(hero){ var bd=document.querySelector(".cs-body"); h.classList.toggle("over", bd.getBoundingClientRect().top > h.offsetHeight); }
-    busy=false;
-  }
-  window.addEventListener("scroll",function(){ if(!busy){ busy=true; requestAnimationFrame(update); } },{passive:true});
-  window.addEventListener("resize",update); update();
-})();
-</script>
+</main>
 </body></html>

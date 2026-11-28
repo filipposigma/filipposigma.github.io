@@ -43,7 +43,7 @@ main{flex:1}
 .cs-lead p.clamp{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
 .more{display:inline-block;padding:0;margin:16px 0 0;background:none;border:0;font:inherit;color:inherit;text-decoration:underline;cursor:pointer}
 .more[hidden]{display:none}
-.cs-meta{padding:0 20px;margin-top:34px;font-size:14px;line-height:18px;color:#6F6F6F}
+.cs-meta{padding:0 20px;margin-top:34px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:16px;line-height:18px;letter-spacing:0;color:#6F6F6F}
 .cs-blocks{padding:0 20px;margin-top:12px}
 .blk{width:100%;margin:0 0 25px;background:#B0B0B0;overflow:hidden}
 .blk.b2{aspect-ratio:1400/930}
@@ -90,7 +90,7 @@ main{flex:1}
  .ab .col1{max-width:690px}
  .ab p{margin-bottom:23.5px}
  .cs-lead{margin-top:18px;font-size:30px;line-height:33px}
- .cs-meta{font-size:14px;line-height:18px;margin-top:55px}
+ .cs-meta{font-size:16px;line-height:18px;margin-top:55px}
  .cs-blocks{margin-top:28px}
  .cs-blocks>.blk:last-child{margin-bottom:32px}
  .blk,.pair{margin-bottom:100px}
@@ -114,10 +114,7 @@ main{flex:1}
 }
 
 /* ---------- About card: slides in from the right ---------- */
-.about-card{position:fixed;top:0;right:0;bottom:0;width:100%;z-index:60;background:#fff;overflow-y:auto;overscroll-behavior:contain;
- padding:83px 20px 40px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:22px;line-height:25px;letter-spacing:-.26px;
- transform:translateX(100%);visibility:hidden;transition:transform .6s cubic-bezier(.22,.8,.24,1),visibility 0s linear .6s}
-.about-card.is-open{transform:none;visibility:visible;transition-delay:0s}
+.about-card{position:relative;min-height:100vh;box-sizing:border-box;background:#fff;padding:83px 20px 40px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:22px;line-height:25px;letter-spacing:-.26px}
 .about-card p{margin:0 0 25px}
 .about-card a{color:inherit}
 .ac-left{margin-bottom:50px}
@@ -125,7 +122,7 @@ main{flex:1}
 .ac-right p{margin:0}
 .ac-right section p:first-child{margin-bottom:25px}
 .ac-head{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:16px 20px 0}
-.ac-close{outline:0;font:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+.ac-close{text-decoration:none;font:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
 @media(min-width:768px){
  .about-card{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));column-gap:20px;align-content:start;padding:127px 20px 40px;font-size:30px;line-height:33px;letter-spacing:-.3px}
  .ac-left{grid-column:1 / 6;margin:0}
@@ -134,4 +131,5 @@ main{flex:1}
  .ac-right{grid-column:7 / 11;font-size:22px;line-height:25px;letter-spacing:-.26px}
  .ac-head{padding:19.4px 20px 0}
 }
-@media(prefers-reduced-motion:reduce){.about-card{transition:none}}
+
+.site-head a,.site-head a:focus,.site-head a:active,.ac-name,.ac-close{outline:0;border:0;-webkit-tap-highlight-color:transparent}
