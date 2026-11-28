@@ -117,7 +117,7 @@ main{flex:1}
 }
 
 /* ---------- About card: slides in from the right ---------- */
-.about-card{position:fixed;top:0;right:0;bottom:0;width:100%;z-index:60;background:#FFEAC5;overflow-y:auto;overscroll-behavior:contain;
+.about-card{position:fixed;top:0;right:0;bottom:0;width:100%;z-index:60;background:#fff;overflow-y:auto;overscroll-behavior:contain;
  padding:83px 20px 40px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:22px;line-height:25px;letter-spacing:-.26px;
  transform:translateX(100%);visibility:hidden;transition:transform .6s cubic-bezier(.22,.8,.24,1),visibility 0s linear .6s}
 .about-card.is-open{transform:none;visibility:visible;transition-delay:0s}
@@ -127,7 +127,7 @@ main{flex:1}
 .about-card a{color:inherit}
 .about-card .contact a{display:block;width:max-content}
 .ac-head{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:16px 20px 0}
-.ac-close{font:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+.ac-close{outline:0;font:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
 @media(min-width:768px){
  .about-card{width:50.694%;padding:127px 18px 40px 22.5px;font-size:30px;line-height:33px;letter-spacing:-.3px}
  .about-card p{margin-bottom:33px}
