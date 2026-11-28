@@ -31,15 +31,6 @@ main{flex:1}
 .cs-cats{display:none}
 .card .cap .yr{display:inline}
 
-/* ---------- info ---------- */
-
-body.aboutpage{--bg:#fff}
-.info{flex:1;position:relative;padding:83px 20px 24px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:22px;line-height:25px;letter-spacing:-.26px}
-.info p{margin:0 0 25px}
-.info-head{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:16px 20px 0}
-.info .contact a{display:block;width:max-content}
-.info .contact p+p{margin-bottom:0}
-.card .cap{font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:16px;line-height:20px}
 /* ---------- case study ---------- */
 .cs-hero{position:relative;z-index:0;width:100%;height:250px;background:#B0B0B0;overflow:hidden}
 .cs-body{position:relative;z-index:1;background:var(--bg);display:flow-root}
@@ -77,13 +68,6 @@ body.aboutpage{--bg:#fff}
  .cs-story h2,.cs-story p{letter-spacing:-.3px}
  .cs-lead{letter-spacing:0}
  .card .cap{font-size:30px;line-height:33px}
- .info{display:grid;grid-template-columns:50.893% 1fr;align-content:start;padding:127px 20px 24px;font-size:30px;line-height:33px;letter-spacing:-.3px}
- .info-head{padding:19.4px 20px 0}
- .info .col1{max-width:689px}
- .info p{margin-bottom:0}
- .info .col2{margin-left:-2px}
- .info .contact{grid-column:1;margin-top:58.5px}
- .info .contact p:first-child{margin-bottom:33px}
  .site-head{font-size:30px;line-height:33px;letter-spacing:-.3px;padding:19.4px 20px 12px}
  .lsd .blk.b3{aspect-ratio:1400/930}
  body{font-size:18px;line-height:23.5px}
@@ -131,3 +115,24 @@ body.aboutpage{--bg:#fff}
  .cards.proj .card:hover .im img,.cards.proj .card:focus-visible .im img{opacity:0}
  .cards.proj .card:hover .cap,.cards.proj .card:focus-visible .cap{opacity:1}
 }
+
+/* ---------- About card: slides in from the right ---------- */
+.about-card{position:fixed;top:0;right:0;bottom:0;width:100%;z-index:60;background:#FFEAC5;overflow-y:auto;overscroll-behavior:contain;
+ padding:83px 20px 40px;font-family:"Times New Roman",Times,"Liberation Serif",serif;font-weight:400;font-size:22px;line-height:25px;letter-spacing:-.26px;
+ transform:translateX(100%);visibility:hidden;transition:transform .6s cubic-bezier(.22,.8,.24,1),visibility 0s linear .6s}
+.about-card.is-open{transform:none;visibility:visible;transition-delay:0s}
+.about-card p{margin:0 0 25px}
+.about-card .contact p:first-child{margin-bottom:25px}
+.about-card .contact p+p{margin-bottom:0}
+.about-card a{color:inherit}
+.about-card .contact a{display:block;width:max-content}
+.ac-head{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:16px 20px 0}
+.ac-close{font:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+@media(min-width:768px){
+ .about-card{width:50.694%;padding:127px 18px 40px 22.5px;font-size:30px;line-height:33px;letter-spacing:-.3px}
+ .about-card p{margin-bottom:33px}
+ .about-card .contact p:first-child{margin-bottom:33px}
+ .ac-head{padding:19.4px 20px 0;justify-content:flex-end}
+ .ac-name{display:none}
+}
+@media(prefers-reduced-motion:reduce){.about-card{transition:none}}

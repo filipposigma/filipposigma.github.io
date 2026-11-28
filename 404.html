@@ -8,10 +8,32 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="/style.css?v=74">
+<link rel="stylesheet" href="/style.css?v=76">
 </head><body class="">
 <header class="site-head"><a href="/">Filippos Saltsidis</a><a href="/about">Info</a></header>
 <main class="ab"><div class="col1"><p>Page not found.</p><p><a href="/">Back to the work</a></p></div></main>
+<aside id="about-card" class="about-card" aria-label="About Filippos Saltsidis" aria-hidden="true">
+<div class="ac-head"><a class="ac-name" href="/">Filippos Saltsidis</a><button class="ac-close" type="button">Close</button></div>
+<p>Filippos Saltsidis is a London-based UX/UI designer with more than fifteen years of experience in graphic, brand and digital design. I started in print and packaging, ran my own studio, and moved steadily into websites, interfaces and design systems, working with clients and teams in Greece, Berlin and London.</p>
+<p>I work best at the start of a project, when the problem isn't clear yet. Before I open Figma, I try to understand who the product is for, what they're trying to do and where they get stuck. Then I turn that into structure: clear hierarchy, simple flows and components a team can reuse and build.</p>
+<div class="contact"><p>Contact</p>
+<p><a href="tel:+447707354630">(+44) 77 07 35 46 30</a>
+<a href="mailto:filipposaltsidis@icloud.com">filipposaltsidis@icloud.com</a></p></div>
+</aside>
+<script>
+(function(){
+  var card=document.getElementById("about-card"); if(!card) return;
+  var closeBtn=card.querySelector(".ac-close"), last=null;
+  function open(){ last=document.activeElement; card.classList.add("is-open"); card.setAttribute("aria-hidden","false"); setTimeout(function(){closeBtn.focus({preventScroll:true});},50); }
+  function close(){ card.classList.remove("is-open"); card.setAttribute("aria-hidden","true"); if(location.pathname.replace(/\/$/,"")==="/about"){ history.replaceState(null,"","/"); } if(last&&last.focus) last.focus({preventScroll:true}); }
+  document.addEventListener("click",function(e){
+    var a=e.target.closest&&e.target.closest('a[href="/about"]');
+    if(a&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&e.button===0){ e.preventDefault(); open(); }
+  });
+  closeBtn.addEventListener("click",close);
+  document.addEventListener("keydown",function(e){ if(e.key==="Escape"&&card.classList.contains("is-open")) close(); });
+})();
+</script>
 <script>
 (function(){
   var h=document.querySelector(".site-head"); if(!h) return;
